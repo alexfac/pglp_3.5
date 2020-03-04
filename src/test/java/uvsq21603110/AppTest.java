@@ -9,12 +9,9 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void initMetier(){
+        UneClasseMetier m = new UneClasseMetier("Bob");
+        assertTrue(m != null);
     }
 }

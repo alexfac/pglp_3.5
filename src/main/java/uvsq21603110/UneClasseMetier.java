@@ -1,7 +1,18 @@
 package uvsq21603110;
 
-public class UneClasseMetier extends Affichage {
+import java.time.LocalDateTime;
 
-    public UneClasseMetier(){
+public class UneClasseMetier implements Affichage {
+
+    private String nom;
+
+    public UneClasseMetier(String nom){
+        this.nom = nom;
+    }
+
+    @Override
+    public void afficher() {
+        System.out.println(LocalDateTime.now() + " : Debut");
+        System.out.println(LocalDateTime.now() + " : Fin");
     }
 }
